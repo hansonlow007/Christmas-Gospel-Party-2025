@@ -356,9 +356,22 @@ body {
     font-size: 12px; /* 原来是 14px */
     color: #555;
     line-height: 1.6;
-    padding: 0 5px; /* 稍微减少左右 padding，让文本更宽 */
+    padding: 10px 5px; /* 稍微减少左右 padding，让文本更宽 */
 }
-
+/* --- 新增电影海报样式 --- */
+.movie-poster {
+  max-width: 65%; /* 限制海报宽度，使其不占满整个卡片 */
+  height: auto;
+  display: block; /* 转换为块级元素 */
+  /* 居中海报并与简介和视频保持间距 */
+  margin: 15px auto 20px; 
+  border-radius: 10px;
+  
+  /* 增加立体感和光泽感 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+  border: 3px solid rgba(255, 255, 255, 0.8); 
+  object-fit: cover;
+}
 .trailer-container {
     margin-top: 20px; /* 增加与上方文本的距离 */
     border-radius: 12px;
